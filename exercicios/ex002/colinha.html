@@ -1,0 +1,185 @@
+<!DOCTYPE html> <!--atalho <!-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><!--icone de pagina no navegador-->
+    <title>colinha</title>
+    <link rel="stylesheet" href="../ex002/css/colinha.css">
+    <link rel="stylesheet" href="css/CharliePerth.otf">
+    
+</head> 
+<body>
+    <main>
+        <h1>Paragrafo e Quebra de linhas</h1>
+         <hr> <!--linha horizontal-->
+        <h2>Paragrafos e linhas</h2>
+        <p>
+                você pode escrever um oaragrafo de qualquer jeito, basta colocar no meio das tags &lt;p&gt;e &lt;/p&gt;
+            </p> <!--less than/ menor que e greater than maior que-->
+            <p>se você precisar quebrar o texto em um lugar expecifico como esse <br> basta usar a tag &lt;br&gt;
+            </p>
+        <hr>
+        
+        <h2>add image and emojis</h2>
+        <details> <summary>add simbolos usa tag detail e summary </summary><!--tag summary cria sumario-->
+                &reg; &copy; &trade; &euro; &pound; &yen; &cent; &Delta; &uarr; &uparrow;
+            </details> <!--tag details serve para criar detalhes 'saiba mais' -->
+        
+            <p>add emojis
+                &#x1F596; <!--emojipidia-->
+            </p>
+        <br><!--quebra de linha-->
+        <img src="128.png" alt="logo html"> <!--indexar imagem interna-->
+        <br>
+        <img src="https://cdn.icon-icons.com/icons2/3398/PNG/128/javascript_logo_icon_214719.png" alt="logo js">
+        <!--indexar imagem por link externo-->
+        <h<h2>fomatação de texto</h2>
+            <p> para textos em <b>negrito</b> temos a tag &lt;b&gt; </p>
+            <!--apenas para fomra-->
+            <p> para texto em <strong>negrito</strong> temos a tag &lt;strong&gt; </p>
+            <!--alem de fomra dà também semantica-->
+            <p> para textos em <i>italico</i> existe a tag &lt;i&gt; </p>
+            <!--apenas forma-->
+            <p> pra textos em <em>italico</em> existe também a tag &lt;em&gt; </p>
+            <!--forma com semantica muito melhor-->
+            <p> para testos marcados <mark>(marcador de texto)</mark> podemos usar a tag &lt;mark&gt;</p>
+            <p> para textos pequenos <small>(letras miúdas)</small> usamos a tag &lt;small&gt; </p>
+            <p> para textos deletados <del>(riscado)</del> usamos a tag &lt;del&gt;</p>
+            <p> oara testos inseridos <ins>(sublinhado)</ins> usamos a tag &lt;ins&gt;</p>
+            <!--forma com semantica / tag <u> apenas forma-->
+        
+            <p> para textos <sup>(sobreescritos)</sup> usamos a tag &lt;sup&gt;</p>
+            <p> para textos <sub>(sobescritos)</sub> usamos a tag &lt;sub&gt;</p>
+        <hr>
+        <h2>formatações para codigos</h2>
+        
+            <p> o comando <code>doccument.getelementbyid('teste')</code> é escrito em linguagem Javascript </p>
+            <!-- <code> fonte monoespaçada-->
+        <pre><!--<pre> USADO PARA MOSTRAR TUDO DO INICIO AO FIM DA TAG, aparentemente não precisa da tag e funciona pra formatação do texto <p>-->
+            <code>
+        num = int(inout(1digite um numero'))
+        if num % 2 == 0:
+            print(f' o numero {num} é par')
+        else:
+            print(f'o numero {num} é impar')
+        print('fim do programa')
+                    </code>
+                </pre>
+        <hr>
+        <h2>citações simples</h2>
+        
+            <p> como diria o pai de uma amigo <q>o computador é um burro muito rapido</q> </p>
+        
+        <h2>citações completas</h2>
+        
+            <p>segundo illustrator</p>
+            <blockquote cite="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiurtHv8OH4AhVL5lwKHRoPBi0YABABGgJjZQ&ae=2&ohost=www.google.com&cid=CAASJORo55U6fM8IMgxcrFqr0L5zr2lDY2U_L4j5VWvMhuSzaVfEHQ&sig=AOD64_3Epg0p-oHn0RPzryHXnMKCxRUo3A&q&adurl&ved=2ahUKEwiIi8rv8OH4AhVTr5UCHbndCb4Q0Qx6BAgEEAE">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quis ipsam, accusamus incidunt nam ullam error fugit esse, magnam praesentium aperiam maxime nostrum. Qui sit ut atque nemo numquam repudiandae!</blockquote>
+
+        <h2>abreviações</h2>
+        
+            <p>estou estudando <abbr title="hyper text markup">html</abbr> e <abbr title="cascading style sheets">css</abbr></p>
+            <!--abbr mostrar o texto completo de uma abreviação quando passar o mouse por cima do texto-->
+        <h2>texto invertido</h2>
+        
+            <p><bdo dir="rtl">texto invertido</bdo></p>
+            <!--tag <bdo> seguido de orientação inverte o texto-->
+        
+        <hr>
+        <h2>listas ordenada</h2>
+        <ol type="1"> <!-- 1 A a I i-->
+            <li>primeiro
+            <li>segundo</li>
+            <li>terceiro</li>
+            <li>quarto
+        </ol>
+        <!--<ol> são listas <li> são os itens da lista e <ol type> é o tipo de numeração da lista-->
+        
+        <h2>lista não ordenada</h2>
+            <ul type="disk"> <!--disk, circle, square-->
+            <li>primeiro</li>
+            <li>seundo</li>
+            <li>terceiro</li>
+            <li>quarto</li>
+            </ul>
+        <h2>exemplos de listas mistutradas</h2>
+        <ol>
+            <li>lista 1</li>
+            <ol>
+                <li>primerio</li>
+                <li>segundo</li>
+                <li>terceiro</li>
+                <li>quarto</li>
+            </ol>
+            <li>lista 2</li>
+            <ol start="5">
+                <li>quinto</li>
+                <li>sexto</li>
+                <li>setimo</li>
+                <li>oitavo</li>
+                    <ul type="circle">
+                        <li>oitavo primeiro</li>
+                    </ul>
+            </ol>
+        </ol>
+        <hr>
+        <h2>exemplos de links</h2>
+            <p>aqui você pode acessar o <a href="https://www.google.com/search?q=google&rlz=1C1SQJL_pt-BRBR864BR864&oq=google&aqs=chrome..69i57j46i131i199i433i465i512j0i131i433i512l2j69i60l4.2015j0j7&sourceid=chrome&ie=UTF-8" target="_blank" rel="external">google</a></p>
+            <!-- <target="" usando dentro tags faz abrir o link em outra janela o rel="external" ainda não entendi muito bem a diferença de usar ou não-->
+            <p>aqui você pode acessar o <a href="https://www.google.com/search?q=google&rlz=1C1SQJL_pt-BRBR864BR864&oq=google&aqs=chrome..69i57j46i131i199i433i465i512j0i131i433i512l2j69i60l4.2015j0j7&sourceid=chrome&ie=UTF-8">google </a>
+            </p>
+            <!--sem o uso to target na tag o link é sobreposto a sua pagina-->
+            <p>aqui você pode acessar o google</p>
+            <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" target="_balnk" rel="external"><img src="https://cdn.icon-icons.com/icons2/3398/PNG/128/javascript_logo_icon_214719.png" alt="logo js" alt="google"></a>
+            <!--exemplo usando imagens como links na pagina-->
+        <p><a href="pag02.html" target="_self">clique aqui para ir para a pagina 2</a></p>
+                              <!--target blank opcional para abrir o link em outra pagina do navegador-->
+        <p>
+            <a href="pacotes/pacotes.html" target="_self">confira os pacotes!</a>
+        </p>
+        
+        <h2>links para dowload</h2>
+        <ul>
+            <li><a href="pdf's/apresentacao fixa.pdf" target="_blank" download="apresentacao fixa.pdf" type="application.pdf">pdf</a>
+            </li>
+            <li><a href="pdf's/apresentacao fixa.xhtml" target="_blank" download="apresentacao fixa.pdf" type="application/vnd.oipf.dae.xhtml+xml">xhtml</a>
+            </li>
+            <li><a href="pdf's/Apresentação fixa.jpg" target="_blank" download="apresentacao fixa" type="image/vnd.sealedmedia.softseal.jpg">jpg</a>
+            </li>
+        </ul>
+
+        <div>box1
+            <div>box2</div>
+            <div>box3</div>
+        </div>
+
+
+        <hr>
+
+        <h2>trabalhando com audios</h2>
+        <p>audio abaixo</p>
+        <audio preload="metadata" autoplay controls loop>
+            <source src="audios/WhatsApp Audio 2022-07-07 at 11.21.52 AM.aac" type="audio/ogg">
+            <!--arquivos OGG tem a extenção .acc-->
+            <source src="audios/WhatsApp Audio 2022-07-07 at 11.21.52 AM.mpeg" type="audio/mpeg">
+            <p>seu navegador não executou o audio? <a href="audios/WhatsApp Audio 2022-07-07 at 11.21.52 AM.mpeg">clique aqui</a>/a></p>
+        </audio>
+        <h2>testando videos</h2>
+        <p>alguma coisa sobre o video</p>
+        <video width="500" poster="#" controls loop><!--é bom a capa ter o mesmo tamanho do video-->
+            <source src="videos/meu-video.m4v" type="video/mp4">
+            <source src="videos/meu-video.m4v" type="video/m4v">
+            <source src="videos/meu-video.webm" type="video/webm">
+            <source src="videos/meu-video.ogv" type="video/ogv">
+            <!--os src servem para tentar abrir outro arquivo por prioridade caso o antereior tenha falhado-->
+            <p>caso o video não tenha carregado, seu navegador não suporta os formatos de videos</p>
+        </video>
+        <a href="pag02.html" target="_blank" width="500" rel="external"><img width="250" height="230"src="pdf's/Apresentação fixa.jpg"  alt="capa de video"></a>clique no video para assistir em outra aba
+        <iframe width="360" height="215" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>r>
+    </main>
+
+    
+
+</body>
+</html>

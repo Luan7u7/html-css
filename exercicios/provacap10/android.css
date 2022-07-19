@@ -1,0 +1,233 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/* tentar trocar a fonte para ver se o bug é na font do google*/
+
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf);
+    font-weight: normal;
+    }
+
+:root{
+    --cor1:#c5ebd6;
+    --cor2:#83E1ad;
+    --cor3:#3ddc84;
+    --cor4:#2fa866;
+    --cor5:#1a5c37;
+    --cor0:#063d1e;
+
+    --font-padrão: arial, helvetica, sans-serif;
+    --font-android: 'idroid', sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-texto:  'Oswald', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-image: linear-gradient(to bottom,var(--cor4), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}/*configurar responsividade*/
+
+header h1{
+    color: white;
+    font-family:'Bebas Neue', sans-serif;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px #0000008e;
+}
+
+header p{
+    color: white;
+    text-shadow: 2px 2px 0px #0000008e;
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+nav{
+    background-color: var(--cor5);
+    font-size: 12px;
+    box-shadow: 0px 7px 9px #0000009b;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav> a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition-duration: .5s;
+    border-radius: 2px;
+}
+
+nav> a:hover{
+    background-color: var(--cor2);
+}
+
+body{
+    background-color: #84E1AD;
+    font-family:var(--font-texto)
+}
+
+logic{
+    background-color: white;
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    line-height: 1.5em;
+    text-align:justify;
+    box-shadow: 0px 0px 8px #000000b1;
+}/*configurar responsividade*/
+
+article h1{
+    font-family: idroid;
+    color: #006411;
+    margin-bottom: 20px;
+}
+
+article h2{
+    background-image: linear-gradient(to right, #00641198, #a6d6af7c, #fbfbfb57);
+    font-family: idroid;
+    color: #006411;
+    border-radius: 115px;
+    padding: 6px 15px;
+    margin: 20px 0px 20px -10px;
+}
+main img{
+    width: 100%;
+    margin: 30px 0px;
+    border-radius: 20px;
+}
+    
+main{
+    background-color: white;
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+    padding: 20px;
+}
+
+main p{
+    text-indent: 20px;
+}
+
+main img.bugp{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+article h3{
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+}
+
+div.video{
+    background-color: #063d1e;
+    margin: 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 59%;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    width: 98%;
+    height: 90%;
+}
+
+#mais{
+    color:#000000;
+    text-align: center;
+    padding: 20px;
+    margin: -10px;
+}
+
+details{
+    background-color: #c7f1d9;
+    padding: 6px;
+    border-radius: 10px;
+    margin: 1px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+details p{
+    text-indent: 5px;
+    text-align: justify;
+    margin: 20px 0px;
+}
+
+details  a{
+    text-decoration: none;
+    color: black;
+}
+
+details a:hover{
+    background-color:var(--cor2);
+    color: white;
+    text-decoration: underline;
+    border-radius: 6px;
+    transition-duration: .3s;
+}
+
+details > summary:hover{
+    color: white;
+    transition-duration: 0.2s;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.sumario{
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    list-style-position: inside;
+    margin: 5px 2px;
+}
+
+footer{
+    background-color: #006411;
+    color: white;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #3ddc84;
+    text-decoration: underline;
+}
+
+picture{
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}

@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@font-face {
+    font-family: charlie;
+    src: url(CharliePerth.otf);/* format(opentype)*/
+    font-weight: normal;
+    font-style: normal;
+    }
+
+*{ font-family: Arial, Helvetica, sans-serif;}/* sefe combination tenta a primeira fonte descrita, se não funcionar tenta a segunda e ect ate a genérica da familia descrita */
+
+@import url('https://fonts.googleapis.com/css2? family= Libre+Baskerville:ital,wght@0,400;0,700;1,400 & display=swap');
+    /* importanto fontes externas da internet para a pagina no navegador / teste no h2*/
+
+body{background-image: linear-gradient(to bottom, #0FC2C0, #0CABA8);}
+
+main{
+    background-color: white;
+    width: 130 0px;
+    margin: auto;
+    box-shadow: 1px 1px 15px #015958;
+    border-radius: 15px;
+    padding: 10px;
+    }
+
+h1{
+    color: #023535;
+    text-align: center;
+    text-shadow: 1px 1px 2px #01595899;
+    }
+
+h2{
+    font-family: charle;
+    }
+
+div{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+div:hover > div{display: inline-block;}
+
+
+div > div{
+    display: none;
+    width: 50px;
+    height: 50px;
+    }

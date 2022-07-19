@@ -1,0 +1,44 @@
+medidas absolutas
+cm, mm, in, px, pt, pc
+
+px > mais recomendado 
+
+medidas relativas
+
+em, ex, rem, vw, hw, %
+em= altura do m maiusculo > mais recomendada
+ex= altura do x
+rem= altura do m relativo a descrição do body
+vw= porcentagem de largura da viewport 
+hw= porcentagem de altura da viewport
+% = %
+
+no html=id no css # html=class no css
+
+atalho para formatação de texto 
+font-syle -> font-weight -> font-size -> font-family
+
+  /* 
+        tipos de fomrmat() 
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype 
+        - truetype-aat (Apple Advanced Typography)
+        - svg
+    */
+
+    *{height: 100%;} * configuração global nas css
+
+   html e css-> identificadores 
+
+  seletores personalizados
+      #  = id
+      .  = class
+      :  = pseudo-class
+      :: = pseudo-element
+      >  = children 
+
+
+no html as tags div servem para cirar um item (geralmente o item ocupa toda a linha), pode-se usar o id e o class para fazer seleções dessas divs como por exemplo para fazer uma tabela 
+
+        
