@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+:root{
+    --font1: Tahoma, Geneva, Verdana, sans-serif;
+    --versos: 'Edu VIC WA NT Beginner', cursive;
+    --titulos: 'Merriweather', serif;
+}
 * {margin: 0px; padding: 0px;}
 
 header{
@@ -11,6 +19,8 @@ header{
 header h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--titulos);
+    font-size: 8vw;
 }
 
 header p{
@@ -33,6 +43,9 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--versos);
+    font-weight: bold;
+    font-size: 4vw;
 }
 
 .normal{
@@ -46,8 +59,9 @@ section{
 }
 
 .imagem p{
-    width: 400px;
+    display: inline-block;
     background-color: #00000045;
+    padding: 10px;
 }
 
 
