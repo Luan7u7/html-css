@@ -9,6 +9,11 @@
         *{
             font-family: Arial, Helvetica, sans-serif;
         }
+        div{background-color: red;
+            color:red;
+            font-size: 4px;
+            font-weight: bolder;
+        }
     </style>
 </head>
 <body>
@@ -19,6 +24,52 @@
         <p><input type="submit" value="enviar"></p>
         <!-- label serve para linkar o input com a etiqueta relacionada -->
         <!-- Get so consegue coletar ate 3 mil letras e nao pode coletar arquivos, já o Post consegue e caso for coletar dados sensiveis deve ser usado o Post, e o Get gera links compartilhaveis  -->
+    </form>
+
+    <br><div>_</div>
+    <!-- estudar mias sobre RegEx expressões regulares para validações de emial, celular etc -->
+    <br>
+
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>cadastro</legend>
+            <p>
+                <label for="nome">nome:</label> <input type="text" name="nome" id="nome" minlength="5" maxlength="20">
+            </p>
+            <p>
+                <label for="iemail">E-Mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Tell</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^[0-9]{4}-[0-9]{4}$" required placeholder="(xx)xxxx-xxxx">
+                pattern="^\(\d{2}\)\d{4,5}-\d{4}$"
+               'pattern' é um exemplo de RegEx para exigir algo expecifico do input
+            </p>
+        </fieldset>
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+    </form>
+
+<br><div>_</div><br>
+
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>sexo</legend>
+            <input type="radio" name="sexo" id="sxmas" value="M" checked><label for="sxmas"> Masculino</label>
+            <br>
+            <input type="radio" name="sexo" id="sxfem" value="F"><label for="sxfem"> Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>esportes</legend>
+            <input type="checkbox" name="esfut" id="iesfut" checked><label for="iesfut"> Futebol</label>
+            <br>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas"> Basquete</label>
+            <br>
+            <input type="checkbox" name="esvol" id="iesvol"><label for="iesvol"> Volei</label>
+            <br>
+            <input type="checkbox" name="esten" id="iesten"><label for="iesten"> Tenis</label>
+        </fieldset>
     </form>
 </body>
 </html>
