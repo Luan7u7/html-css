@@ -71,5 +71,41 @@
             <input type="checkbox" name="esten" id="iesten"><label for="iesten"> Tenis</label>
         </fieldset>
     </form>
+
+<br>
+<div>_</div>
+<br>
+
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="est" id="iest">
+                <optgroup label="estados">
+                    <option value="rs">Rio Grande Do Sul</option>
+                    <option value="nt">Natal</option>
+                    <option value="mg" selected>Minas Gerais</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio De Janeiro</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="adm">Administrador</option>
+                <option value="vend">Vendedor</option>
+            </datalist>
+        </p>
+        
+        <p>
+            <label for="mgs">mensagem</label><br>
+            <textarea name="mgs" id="imsg" cols="80" rows="20" placeholder=" digite aqui..."></textarea>
+        </p>
+
+        <input type="submit" value="enviar">
+        <input type="reset" value="apagar">
+    </form>
 </body>
 </html>
