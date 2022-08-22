@@ -1,0 +1,10 @@
+anotações:
+
+colocar a barra lateral (asside) quando clicar no hamburguinho 
+
+fazer nav ficar responsivo
+
+colocar função e alinhar btn hambirguinho 
+
+
+
