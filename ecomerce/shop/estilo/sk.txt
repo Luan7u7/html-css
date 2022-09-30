@@ -1,0 +1,25 @@
+anotações: ✖️ou✔️
+
+[✔️]  alinhar a barra de navegação na página.
+        [] ==> decidir se vou fazer os acessos do nav como iframes ou pop-ups estilo modal.
+
+[]  pop-up dos menus NAV como modal e fazer o script depois.
+        ==> essa parte provavelmente vai ser feita usando Js.
+
+[✔️]  criar e colocar img pop-ups já redimensionadas e otimizadas.
+        
+
+[]  alinhamento NAV (hamburguinho).
+
+[✔️]  colocar asside na lateral com animação de transição.
+        ==> com código Js para abrir e fechar. 
+
+[]  textos e imagens de fundo da pagina.
+
+[]  revisão de design de cores e fontes.
+
+[]  pop-up modal de descrição do produto para colocar no carrinho.
+
+[]  script para adicinar itens ao carrinho.
+
+[] Js em outra página linkada no index (HTML).

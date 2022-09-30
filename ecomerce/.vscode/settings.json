@@ -1,0 +1,9 @@
+{
+    "workbench.iconTheme": "vs-seti",
+    "react-native-tools.networkInspector.consoleLogsColorTheme": "Dark",
+    "material-icon-theme.activeIconPack": "react",
+    "material-icon-theme.folders.color": "#90a4ae",
+    "editor.minimap.scale": 2,
+    "editor.minimap.maxColumn": 80,
+    "editor.minimap.autohide": true
+}
