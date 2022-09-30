@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    /* outline: 2px solid rgba(255, 0, 0, 0.100); */
+    border: none;
+}
+
+html{
+    width: 80vw;
+    margin: auto;
+}
+
+body{
+    background-color: #f7f7f7;
+    transition: background 0.2s linear;
+}
+
+body.dark, tab {
+    background-color: #25526cb3;
+    color: white;
+}
+
+
+h1{
+    text-align: center;
+    margin: 30px auto;
+}
+
+nav{
+    position: fixed;
+    top: 35px;
+    right: 80px;
+    width: 50px;
+    height: 40px;
+}
+
+.labelcheck{
+    width: 50px;
+    height: 30px;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #c9c9c9;
+    display: flex;
+    position: relative;
+    align-items: center;
+    transform: scale(.9);
+    transition: all 0.5s;
+}
+
+.labelcheck::before{
+    content: "";
+        display: block;
+        background-color: #fff;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        position: absolute;
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        left: 5px;
+}
+
+#idcheck{
+    display: none;
+}
+
+#idcheck:checked + .labelcheck{
+    background-color: #4c86d8;
+}
+
+
+#idcheck:checked + .labelcheck::before {
+    background: #fff;
+    left: calc((50px - 22px) - 5px);
+}
+
+section{
+    padding: 30px;
+    padding-bottom: 50px;
+    max-width: 600px;
+    width: 320px;
+    margin: 0 auto;
+    box-shadow: 
+        0px 2px 4px 0px rgba(0, 0, 0, 0.2),
+        8px 11px 8px 0px rgba(0, 0, 0, 0.1),
+        16px 18px 16px 0px rgba(0, 0, 0, 0.05),
+        22px 30px 20px 0px rgba(1, 1, 1, 0.01);
+}
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: justify;
+}
+
+#n1{
+    font-size: 1.3em;
+    padding: 2px 5px;
+    width: 80px;
+}
+
+
+#tab{
+    width: 200px;
+    height: 220px;
+    margin-top: 20px;
+    overflow: auto;
+    letter-spacing: 3px;
+}
+
+option{
+    margin-top: 5px;
+
+}
+
+.button{
+    background-color: #d6d6d6;
+    border-radius: 3px;
+    padding: 3px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.274);
+}
+
+
+
+
+
+ 

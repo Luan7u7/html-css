@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste JS</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            color: white;
+            margin: auto;
+            text-align: center;
+        }
+
+        img{
+            clip-path: circle();
+        }
+
+        section{
+            background-color: white;
+            width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.26);
+        }
+
+        #msg{
+            font-size: 2em;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        #foto{
+            width: 400px;
+            margin: 20px auto;
+        }
+
+        footer{
+            color: white;
+            text-align: center;
+            font-style: italic;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Hora do dia</h1>
+    </header>
+
+    <section>
+        <div id="msg">
+            mensagem aqui...
+        </div>
+
+        <div id="foto">
+            <img src="https://picsum.photos/400/300">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Luan7u7</p>
+    </footer>
+
+    <script>
+        function carregar() {
+            var msg = document.getElementById('msg')
+            var img = document.getElementById('foto')
+            var data = new Date()
+            var hora = data.getHours()
+            var min = data.getMinutes()
+            
+            msg.innerHTML = `agora são <u><strong> ${hora}:${min} </strong></u> .`
+
+            if (hora >= 0 && hora < 12){
+                msg.innerHTML = `agora são <u><strong> ${hora}:${min} </strong></u> <br> Bom Dia!.`
+                document.body.style.background = '#20b2aa'
+            }
+
+            else if (hora >= 12 && hora <= 18){
+                msg.innerHTML = `agora são <u><strong> ${hora}:${min} </strong></u> <br> Boa Tarde!`
+                document.body.style.background = '#008b8b'
+            }
+            
+            else {
+                msg.innerHTML = `agora são <u><strong> ${hora}:${min} </strong></u> <br> Boa Noite!.`
+                document.body.style.background = '#d2691e'
+
+            }
+        }
+    </script>
+</body>
+</html>

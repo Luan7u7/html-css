@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+        .b1{
+            border-radius: 20px;
+            border: 1px solid black;
+            height: 20px;
+            padding: 5px 10px;
+        }
+
+        .bs{
+            display: block;
+            background-color: white;
+            border: 1px solid;
+            border-radius: 20px;
+            height: 32px;
+            width: 400px;
+            margin-top: 30px;
+        }
+        div{
+            display: block;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>soma</h1>
+    <input type="number" class="b1" name="b1" id="btn1"> +
+    
+    <input type="number" class="b1" name="b2" id="btn2">
+    
+    <input type="button" class="bs" value="area"
+    id="area">
+    <div id="res">resultado</div>
+
+<hr>
+
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+
+        function clicar(){
+            var tn1 = document.getElementById('btn1')
+            var tn2 = document.querySelector('input#btn2')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2 
+            var res = document.getElementById('res')
+            res.innerHTML = `a soma entre ${n1} e ${n2} é ${s}`
+    }
+    </script>
+</body>
+</html>
