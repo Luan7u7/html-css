@@ -1,0 +1,46 @@
+{
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.saveFileBeforeRun": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 20,
+    "editor.language.colorizedBracketPairs": [
+    
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"],
+        ["<", ">"]
+
+    ],
+
+    "workbench.colorCustomizations": {
+
+         // Bracket colors
+         "editorBracketHighlight.foreground1": "#FFD700",
+         "editorBracketHighlight.foreground2": "#e72be1",
+         "editorBracketHighlight.foreground3": "#179effa2",
+         "editorBracketHighlight.foreground4": "#43e91a8c",
+         // Inactive guide colors
+         "editorBracketPairGuide.background1": "#0addec33",
+         "editorBracketPairGuide.background2": "#0addec33",
+         "editorBracketPairGuide.background3": "#0addec33",
+         "editorBracketPairGuide.background4": "#0addec33",
+         // Active guide colors
+         "editorBracketPairGuide.activeBackground1": "#fffb00",
+         "editorBracketPairGuide.activeBackground2": "#fffb00",
+         "editorBracketPairGuide.activeBackground3": "#fffb00",
+         "editorBracketPairGuide.activeBackground4": "#fffb00"
+
+    }
+
+    // "editor.language.brackets": [
+
+    //     ["{", "}"],
+    //     ["[", "]"],
+    //     ["(", ")"],
+    //     ["<", ">"],
+    
+    // ]
+}
