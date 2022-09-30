@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Shop | Login</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            outline: 1px solid orangered;
+
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        
+        main{
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            gap: 20px;
+            background-color: gainsboro;
+            margin: 60px auto;
+            width: 400px;
+            height: 500px;
+            border-radius: 20px;
+            box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.3), 4px 8px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #email{
+            outline: none;
+            border-radius: 20px;
+            border: none;
+            padding: 6px 10px;
+            font-size: 16px;
+        }
+
+        #senha{
+            outline: none;
+            border-radius: 20px;
+            border: none;
+            padding: 6px 10px;
+            font-size: 16px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Seja bem vindo(a)</h2>
+        <legend>cadastre-se</legend>
+        <label for="email">email</label>
+        <input type="text" id="email" placeholder="e-mail">
+        <input type="text" id="senha" placeholder="senha">
+    </main>
+</body>
+</html>
